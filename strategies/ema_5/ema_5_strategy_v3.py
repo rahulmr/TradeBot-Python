@@ -11,10 +11,10 @@ import logging
 logger = logging.getLogger(__name__)
 
 def process(name, status):
-    risk_capacity = 100
+    risk_capacity = 300
     ema_period = 5
     timeframe = '5min'
-    tgt_multiplier = 2
+    tgt_multiplier = 3
     traded = False
 
     while getTradeTime() and status['traded'] != 'yes':
