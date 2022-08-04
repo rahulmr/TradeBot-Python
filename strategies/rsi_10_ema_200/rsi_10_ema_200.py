@@ -47,7 +47,7 @@ def process(name, status):
                 status['sl_price'] = status['entry_price'] - ((status['entry_price'] * 0.25) / 100)
 
                 try:
-                    qty = int(risk_capacity / (status['sl_price'] - status['entry_price']))
+                    qty = int(risk_capacity / (status['sl_price'] + status['entry_price']))
                 except Exception as e:
                     logger.info(f"trade not taken for {name} as SL, entry values are not valid")
                     continue
