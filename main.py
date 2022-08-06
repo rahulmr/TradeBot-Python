@@ -1,7 +1,7 @@
 import threading
 import time
 
-from strategies.ema_5.ema_5_strategy_v3 import ema5Strategy
+from strategies.ema_5.ema_5_strategy_v4 import ema5Strategy
 import logging
 
 from strategies.rsi_10_ema_200.rsi_10_ema_200 import rsi10ema200Strategy
