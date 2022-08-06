@@ -142,18 +142,10 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.handlers.TimedRotatingFileHandler',
-            'filename': 'tradebot.log',
+            'filename': 'logs/tradebot.log',
             'when': 'D', # this specifies the interval
             'interval': 1, # defaults to 1, only necessary for other values
             'backupCount': 10, # how many backup file to keep, 10 days
-            'formatter': 'verbose',
-        },
-        'infofile': {
-            'level': 'INFO',
-            'class': 'logging.handlers.TimedRotatingFileHandler',
-            'filename': 'yourlogbasename.log',
-            'when': 'D', # daily, you can use 'midnight' as well
-            'backupCount': 100, # 100 days backup
             'formatter': 'verbose',
         },
     },
